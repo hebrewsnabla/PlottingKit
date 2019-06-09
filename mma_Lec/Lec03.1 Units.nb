@@ -1,0 +1,522 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     20254,        514]
+NotebookOptionsPosition[     17710,        421]
+NotebookOutlinePosition[     18384,        447]
+CellTagsIndexPosition[     18254,        441]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"distance", "=", 
+   RowBox[{"10", "m"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"time", "=", 
+   RowBox[{"2", "s"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"speed", "=", 
+  RowBox[{"distance", "/", "time"}]}]}], "Input",
+ CellChangeTimes->{{3.69286493859742*^9, 3.6928650056307383`*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"5", " ", "m"}], "s"]], "Output",
+ CellChangeTimes->{3.6928650111219473`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"c", "=", 
+   RowBox[{"2.998", " ", 
+    RowBox[{"10", "^", "8"}], 
+    RowBox[{"m", "/", "s"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Lambda]", "=", 
+   RowBox[{"1.0", " ", 
+    RowBox[{"10", "^", 
+     RowBox[{"-", "6"}]}], "m"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"\[Nu]", "=", 
+  RowBox[{"c", "/", "\[Lambda]"}]}]}], "Input",
+ CellChangeTimes->{{3.6928650479692125`*^9, 3.6928650743644586`*^9}, {
+  3.6928651204157395`*^9, 3.6928651832058496`*^9}}],
+
+Cell[BoxData[
+ FractionBox["2.998`*^14", "s"]], "Output",
+ CellChangeTimes->{3.6928651916298647`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"area", "=", 
+  RowBox[{"distance", "^", "2"}]}]], "Input",
+ CellChangeTimes->{{3.6928657652424717`*^9, 3.6928657821061015`*^9}, {
+  3.692865823290174*^9, 3.692865832868591*^9}}],
+
+Cell[BoxData[
+ RowBox[{"100", " ", 
+  SuperscriptBox["m", "2"]}]], "Output",
+ CellChangeTimes->{3.6928657834477043`*^9, 3.6928658339137926`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"<<", "Units`"}]], "Input",
+ CellChangeTimes->{{3.692866179678*^9, 3.6928661971500306`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"(*", "\:52a0\:8f7d\:8f6f\:4ef6\:5305"}]], "Input",
+ CellChangeTimes->{{3.6928662552133327`*^9, 3.6928662936362*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["$Packages"], "Input",
+ CellChangeTimes->{{3.6928662122508574`*^9, 3.6928662232800765`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"QuantityUnits`\"\>", ",", "\<\"Units`\"\>", 
+   ",", "\<\"CalculateUtilities`AlgorithmUtilities`\"\>", 
+   ",", "\<\"CalculateUtilities`UserVariableUtilities`\"\>", 
+   ",", "\<\"CalculateScan`Packages`Get3DRange`\"\>", 
+   ",", "\<\"CalculateScan`Packages`Get2DRange`\"\>", 
+   ",", "\<\"CalculateScan`Packages`Get1DPolarPlotRange`\"\>", 
+   ",", "\<\"CalculateUtilities`SuggestPlotRanges`\"\>", 
+   ",", "\<\"Utilities`URLTools`\"\>", ",", "\<\"WolframAlphaClient`\"\>", 
+   ",", "\<\"CURLInfo`\"\>", ",", "\<\"URLUtilities`\"\>", 
+   ",", "\<\"CloudObject`\"\>", ",", "\<\"MailReceiver`\"\>", 
+   ",", "\<\"JLink`\"\>", ",", "\<\"Iconize`\"\>", ",", "\<\"UUID`\"\>", 
+   ",", "\<\"Security`\"\>", ",", "\<\"CURLLink`Cookies`\"\>", 
+   ",", "\<\"OAuthSigning`\"\>", ",", "\<\"CURLLink`HTTP`\"\>", 
+   ",", "\<\"CURLLink`\"\>", ",", "\<\"GetFEKernelInit`\"\>", 
+   ",", "\<\"StreamingLoader`\"\>", 
+   ",", "\<\"SymbolicMachineLearningLoader`\"\>", 
+   ",", "\<\"NeuralNetworks`\"\>", ",", "\<\"IconizeLoader`\"\>", 
+   ",", "\<\"HTTPHandlingLoader`\"\>", ",", "\<\"CloudObjectLoader`\"\>", 
+   ",", "\<\"ResourceLocator`\"\>", ",", "\<\"PacletManager`\"\>", 
+   ",", "\<\"System`\"\>", ",", "\<\"Global`\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.6928662253548803`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Names", "[", "\"\<Units`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6928663045718193`*^9, 3.6928663505295*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  "\:8c03\:53d6Mathematica\:4e2d\:5b9a\:4e49\:7684\:6240\:6709\:5355\:4f4d"}]]\
+, "Input",
+ CellChangeTimes->{{3.6928663685007315`*^9, 3.6928664071888*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Abampere\"\>", ",", "\<\"Abcoulomb\"\>", 
+   ",", "\<\"Abfarad\"\>", ",", "\<\"Abhenry\"\>", ",", "\<\"Abmho\"\>", 
+   ",", "\<\"Abohm\"\>", ",", "\<\"Abvolt\"\>", ",", "\<\"Acre\"\>", 
+   ",", "\<\"Amp\"\>", ",", "\<\"Ampere\"\>", ",", "\<\"AMU\"\>", 
+   ",", "\<\"Angstrom\"\>", ",", "\<\"Apostilb\"\>", ",", "\<\"ArcMinute\"\>",
+    ",", "\<\"ArcSecond\"\>", ",", "\<\"Are\"\>", ",", "\<\"AssayTon\"\>", 
+   ",", "\<\"AstronomicalUnit\"\>", ",", "\<\"Atmosphere\"\>", 
+   ",", "\<\"AtomicMassUnit\"\>", ",", "\<\"Atto\"\>", ",", "\<\"AU\"\>", 
+   ",", "\<\"AvoirdupoisOunce\"\>", ",", "\<\"AvoirdupoisPound\"\>", 
+   ",", "\<\"Bag\"\>", ",", "\<\"BakersDozen\"\>", ",", "\<\"Bale\"\>", 
+   ",", "\<\"Bar\"\>", ",", "\<\"Barn\"\>", ",", "\<\"Barrel\"\>", 
+   ",", "\<\"Barye\"\>", ",", "\<\"Baud\"\>", ",", "\<\"Becquerel\"\>", 
+   ",", "\<\"Biot\"\>", ",", "\<\"Bit\"\>", ",", "\<\"BoardFoot\"\>", 
+   ",", "\<\"BohrMagneton\"\>", ",", "\<\"Bolt\"\>", 
+   ",", "\<\"BritishThermalUnit\"\>", ",", "\<\"BTU\"\>", 
+   ",", "\<\"Bucket\"\>", ",", "\<\"Bushel\"\>", ",", "\<\"Butt\"\>", 
+   ",", "\<\"Cable\"\>", ",", "\<\"Caliber\"\>", ",", "\<\"Calorie\"\>", 
+   ",", "\<\"Candela\"\>", ",", "\<\"Candle\"\>", ",", "\<\"Carat\"\>", 
+   ",", "\<\"Celsius\"\>", ",", "\<\"Cental\"\>", ",", "\<\"Centi\"\>", 
+   ",", "\<\"Centigrade\"\>", ",", "\<\"Centimeter\"\>", 
+   ",", "\<\"Century\"\>", ",", "\<\"CGS\"\>", ",", "\<\"Chain\"\>", 
+   ",", "\<\"ChevalVapeur\"\>", ",", "\<\"Cicero\"\>", ",", "\<\"Convert\"\>",
+    ",", "\<\"ConvertTemperature\"\>", ",", "\<\"Cord\"\>", 
+   ",", "\<\"Coulomb\"\>", ",", "\<\"Cubit\"\>", ",", "\<\"Curie\"\>", 
+   ",", "\<\"Dalton\"\>", ",", "\<\"Day\"\>", ",", "\<\"Deca\"\>", 
+   ",", "\<\"Decade\"\>", ",", "\<\"Deci\"\>", ",", "\<\"Denier\"\>", 
+   ",", "\<\"Didot\"\>", ",", "\<\"DidotPoint\"\>", ",", "\<\"Diopter\"\>", 
+   ",", "\<\"Dozen\"\>", ",", "\<\"Drachma\"\>", ",", "\<\"Dyne\"\>", 
+   ",", "\<\"ElectronVolt\"\>", ",", "\<\"Ell\"\>", ",", "\<\"Ephah\"\>", 
+   ",", "\<\"Erg\"\>", ",", "\<\"Exa\"\>", ",", "\<\"Fahrenheit\"\>", 
+   ",", "\<\"Farad\"\>", ",", "\<\"Fathom\"\>", ",", "\<\"Feet\"\>", 
+   ",", "\<\"Femto\"\>", ",", "\<\"Fermi\"\>", ",", "\<\"Fifth\"\>", 
+   ",", "\<\"Firkin\"\>", ",", "\<\"FluidDram\"\>", ",", "\<\"FluidOunce\"\>",
+    ",", "\<\"Foot\"\>", ",", "\<\"FootCandle\"\>", ",", "\<\"Fortnight\"\>", 
+   ",", "\<\"Furlong\"\>", ",", "\<\"Gal\"\>", ",", "\<\"Gallon\"\>", 
+   ",", "\<\"Gauss\"\>", ",", "\<\"Geepound\"\>", ",", "\<\"Giga\"\>", 
+   ",", "\<\"Gilbert\"\>", ",", "\<\"Gill\"\>", ",", "\<\"Grade\"\>", 
+   ",", "\<\"Grain\"\>", ",", "\<\"Gram\"\>", ",", "\<\"GramWeight\"\>", 
+   ",", "\<\"Gravity\"\>", ",", "\<\"GrayDose\"\>", ",", "\<\"Gross\"\>", 
+   ",", "\<\"GrossHundredweight\"\>", ",", "\<\"Hand\"\>", 
+   ",", "\<\"Hectare\"\>", ",", "\<\"Hecto\"\>", ",", "\<\"Hefner\"\>", 
+   ",", "\<\"Henry\"\>", ",", "\<\"Hertz\"\>", ",", "\<\"Hogshead\"\>", 
+   ",", "\<\"Horsepower\"\>", ",", "\<\"Hour\"\>", 
+   ",", "\<\"Hundredweight\"\>", ",", "\<\"ImperialGallon\"\>", 
+   ",", "\<\"ImperialPint\"\>", ",", "\<\"Inch\"\>", 
+   ",", "\<\"InchMercury\"\>", ",", "\<\"Jeroboam\"\>", ",", "\<\"Jigger\"\>",
+    ",", "\<\"Joule\"\>", ",", "\<\"Kayser\"\>", ",", "\<\"Kelvin\"\>", 
+   ",", "\<\"Kilo\"\>", ",", "\<\"Kilogram\"\>", ",", "\<\"KilogramForce\"\>",
+    ",", "\<\"KilogramWeight\"\>", ",", "\<\"Knot\"\>", 
+   ",", "\<\"Lambert\"\>", ",", "\<\"League\"\>", ",", "\<\"Libra\"\>", 
+   ",", "\<\"LightYear\"\>", ",", "\<\"Link\"\>", ",", "\<\"Liter\"\>", 
+   ",", "\<\"LongTon\"\>", ",", "\<\"Lumen\"\>", ",", "\<\"Lumerg\"\>", 
+   ",", "\<\"Lux\"\>", ",", "\<\"Magnum\"\>", ",", "\<\"Maxwell\"\>", 
+   ",", "\<\"Mega\"\>", ",", "\<\"Meter\"\>", ",", "\<\"MetricTon\"\>", 
+   ",", "\<\"Mho\"\>", ",", "\<\"Micro\"\>", ",", "\<\"Micron\"\>", 
+   ",", "\<\"Mil\"\>", ",", "\<\"Mile\"\>", ",", "\<\"Millennium\"\>", 
+   ",", "\<\"Milli\"\>", ",", "\<\"MillimeterMercury\"\>", 
+   ",", "\<\"Mina\"\>", ",", "\<\"Minim\"\>", ",", "\<\"Minute\"\>", 
+   ",", "\<\"MKS\"\>", ",", "\<\"Mole\"\>", ",", "\<\"Month\"\>", 
+   ",", "\<\"Nano\"\>", ",", "\<\"NauticalMile\"\>", 
+   ",", "\<\"NetHundredweight\"\>", ",", "\<\"Newton\"\>", 
+   ",", "\<\"Nibble\"\>", ",", "\<\"Nit\"\>", ",", "\<\"Noggin\"\>", 
+   ",", "\<\"NuclearMagneton\"\>", ",", "\<\"Obolos\"\>", 
+   ",", "\<\"Oersted\"\>", ",", "\<\"Ohm\"\>", ",", "\<\"Omer\"\>", 
+   ",", "\<\"Ounce\"\>", ",", "\<\"Parsec\"\>", ",", "\<\"Pascal\"\>", 
+   ",", "\<\"Peck\"\>", ",", "\<\"Pennyweight\"\>", ",", "\<\"Percent\"\>", 
+   ",", "\<\"Perch\"\>", ",", "\<\"Peta\"\>", ",", "\<\"Phot\"\>", 
+   ",", "\<\"Pica\"\>", ",", "\<\"Pico\"\>", ",", "\<\"Pint\"\>", 
+   ",", "\<\"Poise\"\>", ",", "\<\"Pole\"\>", ",", "\<\"Pondus\"\>", 
+   ",", "\<\"Pony\"\>", ",", "\<\"Pound\"\>", ",", "\<\"Poundal\"\>", 
+   ",", "\<\"PoundForce\"\>", ",", "\<\"PoundsPerSquareInch\"\>", 
+   ",", "\<\"PoundWeight\"\>", ",", "\<\"PrintersPoint\"\>", 
+   ",", "\<\"PSI\"\>", ",", "\<\"Puncheon\"\>", ",", "\<\"Quadrant\"\>", 
+   ",", "\<\"Quart\"\>", ",", "\<\"Quintal\"\>", ",", "\<\"Rad\"\>", 
+   ",", "\<\"Radian\"\>", ",", "\<\"Rankine\"\>", ",", "\<\"RegisterTon\"\>", 
+   ",", "\<\"Reyn\"\>", ",", "\<\"Rhes\"\>", ",", "\<\"RightAngle\"\>", 
+   ",", "\<\"Rod\"\>", ",", "\<\"Roentgen\"\>", ",", "\<\"Rontgen\"\>", 
+   ",", "\<\"Rood\"\>", ",", "\<\"Rope\"\>", ",", "\<\"Rutherford\"\>", 
+   ",", "\<\"Rydberg\"\>", ",", "\<\"Seam\"\>", ",", "\<\"Second\"\>", 
+   ",", "\<\"Section\"\>", ",", "\<\"Shekel\"\>", 
+   ",", "\<\"ShortHundredweight\"\>", ",", "\<\"ShortTon\"\>", 
+   ",", "\<\"Shot\"\>", ",", "\<\"SI\"\>", ",", "\<\"SiderealSecond\"\>", 
+   ",", "\<\"SiderealYear\"\>", ",", "\<\"Siemens\"\>", ",", "\<\"Skein\"\>", 
+   ",", "\<\"Slug\"\>", ",", "\<\"SolarMass\"\>", ",", "\<\"Stadion\"\>", 
+   ",", "\<\"Stadium\"\>", ",", "\<\"Statampere\"\>", 
+   ",", "\<\"Statcoulomb\"\>", ",", "\<\"Statfarad\"\>", 
+   ",", "\<\"Stathenry\"\>", ",", "\<\"Statohm\"\>", 
+   ",", "\<\"StatuteMile\"\>", ",", "\<\"Statvolt\"\>", 
+   ",", "\<\"Steradian\"\>", ",", "\<\"Stere\"\>", ",", "\<\"Stilb\"\>", 
+   ",", "\<\"Stokes\"\>", ",", "\<\"Stone\"\>", ",", "\<\"SurveyMile\"\>", 
+   ",", "\<\"Tablespoon\"\>", ",", "\<\"Talbot\"\>", ",", "\<\"Talent\"\>", 
+   ",", "\<\"Teaspoon\"\>", ",", "\<\"Tera\"\>", ",", "\<\"Tesla\"\>", 
+   ",", "\<\"Therm\"\>", ",", "\<\"Ton\"\>", ",", "\<\"TonForce\"\>", 
+   ",", "\<\"Tonne\"\>", ",", "\<\"Torr\"\>", ",", "\<\"Township\"\>", 
+   ",", "\<\"TropicalYear\"\>", ",", "\<\"TroyOunce\"\>", ",", "\<\"Tun\"\>", 
+   ",", "\<\"UKGallon\"\>", ",", "\<\"UKPint\"\>", ",", "\<\"Volt\"\>", 
+   ",", "\<\"Watt\"\>", ",", "\<\"Weber\"\>", ",", "\<\"Week\"\>", 
+   ",", "\<\"Wey\"\>", ",", "\<\"WineBottle\"\>", ",", "\<\"XUnit\"\>", 
+   ",", "\<\"Yard\"\>", ",", "\<\"Year\"\>", ",", "\<\"Yocto\"\>", 
+   ",", "\<\"Yotta\"\>", ",", "\<\"Zepto\"\>", ",", "\<\"Zetta\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.6928663514343014`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Butt"}]], "Input",
+ CellChangeTimes->{{3.6928664899781446`*^9, 3.6928665001961627`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"Butt is a unit of volume.\"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:Units/ref/Butt"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.6928665021461663`*^9},
+ CellTags->"Info333692895301-5176638"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Hogshead"}]], "Input",
+ CellChangeTimes->{{3.6928678208608828`*^9, 3.6928678298152986`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"Hogshead is a unit of volume.\"\>", "MSG"], 
+  "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:Units/ref/Hogshead"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.6928678312349014`*^9},
+ CellTags->"Info343692896631-5176638"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Convert", "[", 
+  RowBox[{
+   RowBox[{"1", "Atmosphere"}], ",", "Pascal"}], "]"}]], "Input",
+ CellChangeTimes->{{3.692867937658288*^9, 3.692867966736739*^9}}],
+
+Cell[BoxData[
+ RowBox[{"101325.`", " ", "Pascal"}]], "Output",
+ CellChangeTimes->{3.6928679681563416`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", "\:5355\:4f4d\:8f6c\:6362"}]], "Input",
+ CellChangeTimes->{{3.6928684589016037`*^9, 3.69286846821482*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Convert", "[", 
+  RowBox[{
+   RowBox[{"10", "Mile"}], ",", 
+   RowBox[{"Kilo", " ", "Meter"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.692868004442005*^9, 3.692868049323284*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"50292", " ", "Kilo", " ", "Meter"}], "3125"]], "Output",
+ CellChangeTimes->{{3.6928680238328395`*^9, 3.6928680512264876`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", "%", "]"}]], "Input",
+ CellChangeTimes->{{3.6928683887638807`*^9, 3.6928683970162945`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"16.09344`", " ", "Kilo", " ", "Meter"}]], "Output",
+ CellChangeTimes->{3.6928684002143*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"ConvertTemperature", "[", 
+   RowBox[{"72", ",", "Fahrenheit", ",", "Celsius"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.692868517042906*^9, 3.692868604418659*^9}}],
+
+Cell[BoxData["22.22222222222222`"], "Output",
+ CellChangeTimes->{{3.692868557244176*^9, 3.692868605619861*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ConvertTemperature", "[", 
+  RowBox[{"0.", ",", "Celsius", ",", "Kelvin"}], "]"}]], "Input",
+ CellChangeTimes->{{3.692868629378703*^9, 3.6928687152380543`*^9}}],
+
+Cell[BoxData["273.15`"], "Output",
+ CellChangeTimes->{
+  3.6928686517647424`*^9, {3.6928686961624203`*^9, 3.692868719980462*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"<<", "PhysicalConstants`"}]], "Input",
+ CellChangeTimes->{{3.692868737936094*^9, 3.692868738528895*^9}, {
+  3.6928688889911594`*^9, 3.692868932312435*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","obspkg",
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"PhysicalConstants`\\\\\\\"\\\"}]\\) is now \
+obsolete. The legacy version being loaded may conflict with current \
+functionality. See the Compatibility Guide for updating information.\"",2,1,1,
+   28454410076304457669,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.692868911174398*^9, 3.6928689336384373`*^9}, 
+   3.6929322639338017`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Names", "[", "\"\<PhysicalConstants`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6928689511572685`*^9, 3.692868987396132*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"AccelerationDueToGravity\"\>", ",", "\<\"AgeOfUniverse\"\>", 
+   ",", "\<\"AvogadroConstant\"\>", ",", "\<\"BohrRadius\"\>", 
+   ",", "\<\"BoltzmannConstant\"\>", ",", "\<\"ClassicalElectronRadius\"\>", 
+   ",", "\<\"CosmicBackgroundTemperature\"\>", 
+   ",", "\<\"DeuteronMagneticMoment\"\>", ",", "\<\"DeuteronMass\"\>", 
+   ",", "\<\"EarthMass\"\>", ",", "\<\"EarthRadius\"\>", 
+   ",", "\<\"ElectronCharge\"\>", ",", "\<\"ElectronComptonWavelength\"\>", 
+   ",", "\<\"ElectronGFactor\"\>", ",", "\<\"ElectronMagneticMoment\"\>", 
+   ",", "\<\"ElectronMass\"\>", ",", "\<\"FaradayConstant\"\>", 
+   ",", "\<\"FineStructureConstant\"\>", ",", "\<\"GalacticUnit\"\>", 
+   ",", "\<\"GravitationalConstant\"\>", ",", "\<\"HubbleConstant\"\>", 
+   ",", "\<\"IcePoint\"\>", ",", "\<\"MagneticFluxQuantum\"\>", 
+   ",", "\<\"MolarGasConstant\"\>", ",", "\<\"MolarVolume\"\>", 
+   ",", "\<\"MuonGFactor\"\>", ",", "\<\"MuonMagneticMoment\"\>", 
+   ",", "\<\"MuonMass\"\>", ",", "\<\"NeutronComptonWavelength\"\>", 
+   ",", "\<\"NeutronMagneticMoment\"\>", ",", "\<\"NeutronMass\"\>", 
+   ",", "\<\"PlanckConstant\"\>", ",", "\<\"PlanckConstantReduced\"\>", 
+   ",", "\<\"PlanckMass\"\>", ",", "\<\"ProtonComptonWavelength\"\>", 
+   ",", "\<\"ProtonMagneticMoment\"\>", ",", "\<\"ProtonMass\"\>", 
+   ",", "\<\"QuantizedHallConductance\"\>", ",", "\<\"RydbergConstant\"\>", 
+   ",", "\<\"SackurTetrodeConstant\"\>", ",", "\<\"SolarConstant\"\>", 
+   ",", "\<\"SolarLuminosity\"\>", ",", "\<\"SolarRadius\"\>", 
+   ",", "\<\"SolarSchwarzschildRadius\"\>", ",", "\<\"SpeedOfLight\"\>", 
+   ",", "\<\"SpeedOfSound\"\>", ",", "\<\"StefanConstant\"\>", 
+   ",", "\<\"ThomsonCrossSection\"\>", ",", "\<\"VacuumPermeability\"\>", 
+   ",", "\<\"VacuumPermittivity\"\>", ",", "\<\"WeakMixingAngle\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.6928689792061176`*^9, 3.6928689900169363`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["MagneticFluxQuantum"], "Input",
+ CellChangeTimes->{{3.6928690959411225`*^9, 3.6928690992951283`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2.067833667`*^-15", " ", "Weber"}]], "Output",
+ CellChangeTimes->{3.692869101822333*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[CapitalLambda]", "=", 
+   RowBox[{"1.0", " ", 
+    RowBox[{"10", "^", 
+     RowBox[{"-", "6"}]}], "Meter"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"\[CapitalNu]", "=", 
+  RowBox[{"SpeedOfLight", "/", "\[CapitalLambda]"}]}]}], "Input",
+ CellChangeTimes->{{3.692869134878791*^9, 3.6928691841436777`*^9}, {
+  3.692932228445772*^9, 3.6929322406254683`*^9}}],
+
+Cell[BoxData[
+ FractionBox["2.99792458`*^14", "Second"]], "Output",
+ CellChangeTimes->{3.6929322708041945`*^9}]
+}, Open  ]]
+},
+WindowSize->{1366, 686},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (2016\:5e747\:670828\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info333692895301-5176638"->{
+  Cell[11364, 238, 344, 9, 43, "Print",
+   CellTags->"Info333692895301-5176638"]},
+ "Info343692896631-5176638"->{
+  Cell[11869, 256, 355, 10, 43, "Print",
+   CellTags->"Info343692896631-5176638"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info333692895301-5176638", 18033, 432},
+ {"Info343692896631-5176638", 18147, 435}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 340, 9, 69, "Input"],
+Cell[923, 33, 115, 3, 46, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1075, 41, 515, 14, 69, "Input"],
+Cell[1593, 57, 101, 2, 49, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1731, 64, 201, 4, 30, "Input"],
+Cell[1935, 70, 144, 3, 30, "Output"]
+}, Open  ]],
+Cell[2094, 76, 115, 2, 30, "Input"],
+Cell[2212, 80, 140, 2, 30, "Input"],
+Cell[CellGroupData[{
+Cell[2377, 86, 105, 1, 47, "Input"],
+Cell[2485, 89, 1319, 22, 88, "Output"]
+}, Open  ]],
+Cell[3819, 114, 138, 2, 47, "Input"],
+Cell[CellGroupData[{
+Cell[3982, 120, 186, 4, 30, "Input"],
+Cell[4171, 126, 7036, 103, 278, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11244, 234, 117, 2, 30, "Input"],
+Cell[11364, 238, 344, 9, 43, "Print",
+ CellTags->"Info333692895301-5176638"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11745, 252, 121, 2, 30, "Input"],
+Cell[11869, 256, 355, 10, 43, "Print",
+ CellTags->"Info343692896631-5176638"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12261, 271, 182, 4, 30, "Input"],
+Cell[12446, 277, 106, 2, 30, "Output"]
+}, Open  ]],
+Cell[12567, 282, 135, 2, 30, "Input"],
+Cell[CellGroupData[{
+Cell[12727, 288, 203, 5, 30, "Input"],
+Cell[12933, 295, 165, 3, 47, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13135, 303, 124, 2, 47, "Input"],
+Cell[13262, 307, 115, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13414, 314, 215, 4, 47, "Input"],
+Cell[13632, 320, 111, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13780, 326, 184, 3, 30, "Input"],
+Cell[13967, 331, 129, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14133, 338, 179, 3, 30, "Input"],
+Cell[14315, 343, 450, 9, 21, "Message"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14802, 357, 152, 2, 47, "Input"],
+Cell[14957, 361, 1924, 29, 126, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16918, 395, 115, 1, 30, "Input"],
+Cell[17036, 398, 112, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17185, 405, 395, 9, 50, "Input"],
+Cell[17583, 416, 111, 2, 81, "Output"]
+}, Open  ]]
+}
+]
+*)
+

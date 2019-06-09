@@ -1,0 +1,452 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12270,        442]
+NotebookOptionsPosition[     11975,        427]
+NotebookOutlinePosition[     12332,        443]
+CellTagsIndexPosition[     12289,        440]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  StyleBox["(*",
+   FontSize->14,
+   FontWeight->"Bold"], 
+  StyleBox[" ",
+   FontSize->14,
+   FontWeight->"Bold"], 
+  RowBox[{
+   StyleBox[
+    RowBox[{
+     StyleBox[
+      RowBox[{
+       RowBox[{
+        SubscriptBox["NaHCO", "3"], 
+        RowBox[{
+         RowBox[{"(", "aq", ")"}], "\[LongRightArrow]", 
+         SuperscriptBox["Na", "+"]}], 
+        RowBox[{"(", "aq", ")"}]}], "+", 
+       RowBox[{
+        SubsuperscriptBox["HCO", "3", "-"], 
+        RowBox[{"(", "aq", ")"}], "\[IndentingNewLine]", 
+        StyleBox[
+         RowBox[{" ", " "}]], 
+        SubsuperscriptBox["HCO", "3", "-"], 
+        RowBox[{"(", "aq", ")"}]}], "+", 
+       RowBox[{
+        SubscriptBox["H", "2"], "O", 
+        RowBox[{"(", "l", ")"}]}]}],
+      FontSize->16], 
+     StyleBox["\[Equilibrium]",
+      FontSize->16], 
+     RowBox[{
+      StyleBox[
+       RowBox[{
+        SubsuperscriptBox["CO", "3", 
+         RowBox[{"2", "-"}]], 
+        RowBox[{"(", "aq", ")"}]}],
+       FontSize->16], 
+      StyleBox["+",
+       FontSize->16], 
+      RowBox[{
+       StyleBox[
+        SubscriptBox["H", "3"],
+        FontSize->16], 
+       StyleBox[
+        SuperscriptBox["O", "+"],
+        FontSize->16], 
+       StyleBox[
+        RowBox[{"(", "aq", ")"}],
+        FontSize->16], 
+       StyleBox[
+        StyleBox[
+         RowBox[{" ", " "}]],
+        FontSize->16], 
+       StyleBox[
+        StyleBox[
+         RowBox[{
+          StyleBox[" ",
+           FontSize->16], 
+          StyleBox[" ",
+           FontSize->14]}]],
+        FontSize->14], 
+       StyleBox[
+        SubscriptBox["K", 
+         SuperscriptBox["a", "2"]],
+        FontSize->14]}]}]}],
+    FontWeight->"Bold"], 
+   StyleBox["=",
+    FontSize->14,
+    FontWeight->"Bold"], 
+   RowBox[{
+    StyleBox[
+     FractionBox[
+      StyleBox[
+       RowBox[{
+        RowBox[{"[", 
+         SubsuperscriptBox["CO", "3", 
+          RowBox[{"2", "-"}]], "]"}], "[", 
+        RowBox[{
+         StyleBox[
+          SubscriptBox["H", "3"],
+          FontSize->16], 
+         StyleBox[
+          SuperscriptBox["O", "+"],
+          FontSize->14]}], "]"}],
+       FontSize->14], 
+      StyleBox[
+       RowBox[{"[", 
+        SubsuperscriptBox["HCO", "3", "-"], "]"}],
+       FontSize->14]],
+     FontSize->14,
+     FontWeight->"Bold"], 
+    StyleBox["=",
+     FontSize->14,
+     FontWeight->"Bold"], 
+    RowBox[{
+     StyleBox[
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         StyleBox["4.8",
+          FontSize->14], 
+         StyleBox["*",
+          FontSize->14], 
+         StyleBox[
+          SuperscriptBox["10", 
+           RowBox[{"-", "11"}]],
+          FontSize->14], 
+         StyleBox["\[IndentingNewLine]",
+          FontSize->14], 
+         StyleBox[
+          SubsuperscriptBox["HCO", "3", "-"],
+          FontSize->16], 
+         StyleBox[
+          RowBox[{"(", "aq", ")"}],
+          FontSize->16]}], 
+        StyleBox["+",
+         FontSize->16], 
+        StyleBox[
+         RowBox[{
+          SubscriptBox["H", "2"], "O", 
+          RowBox[{"(", "l", ")"}]}],
+         FontSize->16]}], 
+       StyleBox["\[Equilibrium]",
+        FontSize->16], 
+       StyleBox[
+        RowBox[{
+         StyleBox[
+          RowBox[{
+           SubscriptBox["H", "2"], 
+           SubscriptBox["CO", "3"], 
+           RowBox[{"(", "aq", ")"}]}],
+          FontSize->16], 
+         StyleBox["+",
+          FontSize->16], 
+         RowBox[{
+          StyleBox[
+           SuperscriptBox["OH", "-"],
+           FontSize->16], 
+          StyleBox[
+           RowBox[{"(", "aq", ")"}],
+           FontSize->16], 
+          StyleBox[
+           StyleBox[
+            RowBox[{" ", " "}]],
+           FontSize->16], 
+          StyleBox[
+           StyleBox[
+            RowBox[{" ", " "}]],
+           FontSize->16], 
+          StyleBox[
+           SubscriptBox["K", 
+            SuperscriptBox["b", "2"]],
+           FontSize->14]}]}],
+        FontSize->14]}],
+      FontWeight->"Bold"], 
+     StyleBox["=",
+      FontSize->14,
+      FontWeight->"Bold"], 
+     RowBox[{
+      StyleBox[
+       FractionBox[
+        RowBox[{
+         StyleBox[
+          RowBox[{"[", 
+           RowBox[{
+            SubscriptBox["H", "2"], 
+            SubscriptBox["CO", "3"]}], "]"}],
+          FontSize->14], 
+         StyleBox["[",
+          FontSize->14], 
+         StyleBox[
+          SuperscriptBox["OH", "-"],
+          FontSize->16], 
+         StyleBox["]",
+          FontSize->16]}], 
+        StyleBox[
+         RowBox[{"[", 
+          SubsuperscriptBox["HCO", "3", "-"], "]"}],
+         FontSize->14]],
+       FontSize->14,
+       FontWeight->"Bold"], 
+      StyleBox["=",
+       FontSize->14,
+       FontWeight->"Bold"], 
+      RowBox[{
+       StyleBox[
+        RowBox[{
+         RowBox[{
+          StyleBox["2.3",
+           FontSize->14], 
+          StyleBox["*",
+           FontSize->14], 
+          RowBox[{
+           StyleBox[
+            SuperscriptBox["10", 
+             RowBox[{"-", "8"}]],
+            FontSize->14], 
+           StyleBox["\[IndentingNewLine]",
+            FontSize->16], 
+           StyleBox["                  ",
+            FontSize->16], 
+           StyleBox["\[UpArrow]",
+            FontSize->16], 
+           StyleBox["\[IndentingNewLine]",
+            FontSize->16], 
+           StyleBox["                ",
+            FontSize->16], 
+           StyleBox[
+            SubscriptBox["CO", "2"],
+            FontSize->16]}], 
+          StyleBox[
+           RowBox[{"(", "aq", ")"}],
+           FontSize->16], 
+          StyleBox["\[IndentingNewLine]",
+           FontSize->16], 
+          StyleBox["2",
+           FontSize->16], 
+          StyleBox[
+           SubscriptBox["H", "2"],
+           FontSize->16], 
+          StyleBox["O",
+           FontSize->16]}], 
+         StyleBox["\[Equilibrium]",
+          FontSize->16], 
+         RowBox[{
+          StyleBox[
+           RowBox[{
+            SubscriptBox["H", "3"], 
+            SuperscriptBox["O", "+"], 
+            RowBox[{"(", "aq", ")"}]}],
+           FontSize->16], 
+          StyleBox["+",
+           FontSize->16], 
+          RowBox[{
+           StyleBox[
+            SuperscriptBox["OH", "-"],
+            FontSize->16], 
+           StyleBox[
+            RowBox[{"(", "aq", ")"}],
+            FontSize->16], 
+           StyleBox[
+            RowBox[{
+             StyleBox["              ",
+              FontSize->16], 
+             StyleBox[" ",
+              FontSize->14]}]], 
+           StyleBox[
+            SubscriptBox["K", "w"],
+            FontSize->14]}]}]}],
+        FontWeight->"Bold"], 
+       StyleBox["=",
+        FontSize->14,
+        FontWeight->"Bold"], 
+       RowBox[{
+        StyleBox[
+         RowBox[{
+          RowBox[{
+           StyleBox["[",
+            FontSize->14], 
+           StyleBox[
+            RowBox[{
+             SubscriptBox["H", "3"], 
+             SuperscriptBox["O", "+"]}],
+            FontSize->16], 
+           StyleBox["]",
+            FontSize->16]}], 
+          StyleBox["[",
+           FontSize->16], 
+          StyleBox[
+           SuperscriptBox["OH", "-"],
+           FontSize->16], 
+          StyleBox["]",
+           FontSize->16]}],
+         FontWeight->"Bold"], 
+        StyleBox["=",
+         FontSize->14,
+         FontWeight->"Bold"], 
+        RowBox[{
+         StyleBox[
+          RowBox[{
+           StyleBox["1.0",
+            FontSize->14], "*", 
+           SuperscriptBox[
+            StyleBox["10",
+             FontSize->14], 
+            RowBox[{"-", "14"}]], 
+           StyleBox["\[IndentingNewLine]",
+            FontSize->10], 
+           StyleBox[
+            RowBox[{"Cons", ".", " ", "of"}],
+            FontSize->14], 
+           StyleBox[" ",
+            FontSize->14], 
+           RowBox[{
+            StyleBox["charge",
+             FontSize->14], 
+            StyleBox[":",
+             FontSize->14], 
+            RowBox[{
+             StyleBox[
+              RowBox[{
+               StyleBox["[",
+                FontSize->10], 
+               StyleBox[
+                SuperscriptBox["Na", "+"],
+                FontSize->14], 
+               StyleBox["]",
+                FontSize->10]}],
+              FontSize->14], 
+             StyleBox["+",
+              FontSize->14], 
+             RowBox[{
+              StyleBox["[",
+               FontSize->10], 
+              StyleBox[
+               RowBox[{
+                SubscriptBox["H", "3"], 
+                SuperscriptBox["O", "+"]}],
+               FontSize->16], 
+              StyleBox["]",
+               FontSize->16]}]}]}]}],
+          FontWeight->"Bold"], 
+         StyleBox["=",
+          FontSize->16,
+          FontWeight->"Bold"], 
+         StyleBox[
+          RowBox[{
+           StyleBox[
+            RowBox[{
+             RowBox[{
+              StyleBox["2",
+               FontSize->16], "[", 
+              StyleBox[
+               SubsuperscriptBox["CO", "3", 
+                RowBox[{"2", "-"}]],
+               FontSize->14], "]"}], "+", 
+             StyleBox[
+              RowBox[{"[", 
+               SubsuperscriptBox["HCO", "3", "-"], "]"}],
+              FontSize->14], 
+             StyleBox["+",
+              FontSize->14], 
+             RowBox[{"[", 
+              StyleBox[
+               SuperscriptBox["OH", "-"],
+               FontSize->16], 
+              StyleBox["]",
+               FontSize->16]}]}],
+            FontWeight->"Bold"], 
+           StyleBox["\[IndentingNewLine]",
+            FontWeight->"Bold"], 
+           RowBox[{
+            RowBox[{
+             StyleBox["Cons",
+              FontSize->16,
+              FontWeight->"Bold"], 
+             StyleBox[" ",
+              FontSize->16,
+              FontWeight->"Bold"], 
+             StyleBox["of",
+              FontSize->16,
+              FontWeight->"Bold"], 
+             StyleBox[" ",
+              FontSize->16,
+              FontWeight->"Bold"], 
+             RowBox[{
+              StyleBox["C",
+               FontSize->16,
+               FontWeight->"Bold"], 
+              StyleBox[":",
+               FontSize->16,
+               FontWeight->"Bold"], 
+              RowBox[{
+               StyleBox["[",
+                FontSize->16,
+                FontWeight->"Bold"], 
+               SubscriptBox["NaHCO", "3"], "]"}]}]}], "=", 
+            RowBox[{
+             StyleBox[
+              RowBox[{"[", 
+               SubsuperscriptBox["HCO", "3", "-"], "]"}],
+              FontSize->14], 
+             StyleBox["+",
+              FontSize->14], 
+             RowBox[{"[", 
+              SubsuperscriptBox["CO", "3", 
+               RowBox[{"2", "-"}]], "]"}], "+", 
+             StyleBox[
+              RowBox[{"[", 
+               RowBox[{
+                SubscriptBox["H", "2"], 
+                SubscriptBox["CO", "3"]}], "]"}],
+              FontSize->14]}]}]}],
+          FontSize->14]}]}]}]}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7098022514083214`*^9, 3.709802371445771*^9}, {
+  3.709802503312291*^9, 3.709802721017915*^9}, {3.709802849511103*^9, 
+  3.7098029476184316`*^9}, {3.709803042250602*^9, 3.7098032640284147`*^9}, {
+  3.709803416947124*^9, 3.7098034225798063`*^9}, {3.7098034888329353`*^9, 
+  3.7098035297926807`*^9}, {3.709803588331353*^9, 3.709803599102315*^9}, {
+  3.7098058762575564`*^9, 3.7098059532127004`*^9}, {3.7098061290270567`*^9, 
+  3.709806215857585*^9}}],
+
+Cell[BoxData["   "], "Input",
+ CellChangeTimes->{{3.7098028449628096`*^9, 3.7098028456632066`*^9}}]
+},
+WindowSize->{1536, 781},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (2016\:5e747\:670828\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 11311, 402, 215, "Input"],
+Cell[11872, 424, 99, 1, 30, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
